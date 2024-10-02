@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://localhost:8000/docs_page#item-1-2 -->
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ReMap REST API</title>
+    
+    <!-- Meta -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <meta name="description" content="ReMap REST API Documentation website">
+    <meta name="author" content="Benoit Ballester Inserm TAGC U1090">    
+    <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link rel="shortcut icon" href="http://localhost:8000/static/images/icons/api-management-32.ico">
+    
+    <!-- Google Font -->
+    <link href="./ReMap REST API_files/css" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer="" src="./ReMap REST API_files/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./ReMap REST API_files/atom-one-dark.min.css">
+    <link rel="stylesheet" href="./ReMap REST API_files/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="./ReMap REST API_files/theme.css">
+
+	<!-- Prism JSand CSS | https://prismjs.com/ -->
+	<script defer="" src="./ReMap REST API_files/prism.js"></script>
+	<link id="theme-style" rel="stylesheet" href="./ReMap REST API_files/prism.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="http://localhost:8000/remap_rest_index.html"><img class="logo-icon me-2" src="./ReMap REST API_files/coderdocs-logo.svg" alt="logo"><span class="logo-text">ReMap<span class="text-alt">REST Doc</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><!-- <i class="fas fa-search"></i> Font Awesome fontawesome.com --></button>
+				        </form>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-github fa-w-16 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+			            <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-twitter fa-w-16 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fab fa-twitter fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+		                <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-slack fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="slack" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"></path></svg><!-- <i class="fab fa-slack fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+		                <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-product-hunt fa-w-16 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="product-hunt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M326.3 218.8c0 20.5-16.7 37.2-37.2 37.2h-70.3v-74.4h70.3c20.5 0 37.2 16.7 37.2 37.2zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-128.1-37.2c0-47.9-38.9-86.8-86.8-86.8H169.2v248h49.6v-74.4h70.3c47.9 0 86.8-38.9 86.8-86.8z"></path></svg><!-- <i class="fab fa-product-hunt fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+		            </ul><!--//social-list-->
+		            <a href="https://remap.univ-amu.fr/" class="btn btn-primary d-none d-lg-flex">ReMap Live</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar sidebar-visible">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><!-- <i class="fas fa-search"></i> Font Awesome fontawesome.com --></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="http://localhost:8000/docs_page#section-1"><span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-map-signs fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-signs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M507.31 84.69L464 41.37c-6-6-14.14-9.37-22.63-9.37H288V16c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v16H56c-13.25 0-24 10.75-24 24v80c0 13.25 10.75 24 24 24h385.37c8.49 0 16.62-3.37 22.63-9.37l43.31-43.31c6.25-6.26 6.25-16.38 0-22.63zM224 496c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V384h-64v112zm232-272H288v-32h-64v32H70.63c-8.49 0-16.62 3.37-22.63 9.37L4.69 276.69c-6.25 6.25-6.25 16.38 0 22.63L48 342.63c6 6 14.14 9.37 22.63 9.37H456c13.25 0 24-10.75 24-24v-80c0-13.25-10.75-24-24-24z"></path></svg><!-- <i class="fas fa-map-signs"></i> Font Awesome fontawesome.com --></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-1-1">About ReMap</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-1-2">ReMap Data types</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-1-3">Why a REST API ?</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#section-2"><span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-arrow-down fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"></path></svg><!-- <i class="fas fa-arrow-down"></i> Font Awesome fontawesome.com --></span>API overview</a></li>
+				    <li class="nav-item active"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-2-1">getallpeaks</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-2-2">getallpeaks/bytarget</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-2-3">getallpeaks/bybiotype</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-2-4">getallpeaks/bytargetandbiotype</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#section-3"><span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-box fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="box" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M509.5 184.6L458.9 32.8C452.4 13.2 434.1 0 413.4 0H272v192h238.7c-.4-2.5-.4-5-1.2-7.4zM240 0H98.6c-20.7 0-39 13.2-45.5 32.8L2.5 184.6c-.8 2.4-.8 4.9-1.2 7.4H240V0zM0 224v240c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V224H0z"></path></svg><!-- <i class="fas fa-box"></i> Font Awesome fontawesome.com --></span>API documentation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-3-1">Section Item 3.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-3-2">Section Item 3.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-3-3">Section Item 3.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#section-4"><span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-cogs fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cogs" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M512.1 191l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0L552 6.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zm-10.5-58.8c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.7-82.4 14.3-52.8 52.8zM386.3 286.1l33.7 16.8c10.1 5.8 14.5 18.1 10.5 29.1-8.9 24.2-26.4 46.4-42.6 65.8-7.4 8.9-20.2 11.1-30.3 5.3l-29.1-16.8c-16 13.7-34.6 24.6-54.9 31.7v33.6c0 11.6-8.3 21.6-19.7 23.6-24.6 4.2-50.4 4.4-75.9 0-11.5-2-20-11.9-20-23.6V418c-20.3-7.2-38.9-18-54.9-31.7L74 403c-10 5.8-22.9 3.6-30.3-5.3-16.2-19.4-33.3-41.6-42.2-65.7-4-10.9.4-23.2 10.5-29.1l33.3-16.8c-3.9-20.9-3.9-42.4 0-63.4L12 205.8c-10.1-5.8-14.6-18.1-10.5-29 8.9-24.2 26-46.4 42.2-65.8 7.4-8.9 20.2-11.1 30.3-5.3l29.1 16.8c16-13.7 34.6-24.6 54.9-31.7V57.1c0-11.5 8.2-21.5 19.6-23.5 24.6-4.2 50.5-4.4 76-.1 11.5 2 20 11.9 20 23.6v33.6c20.3 7.2 38.9 18 54.9 31.7l29.1-16.8c10-5.8 22.9-3.6 30.3 5.3 16.2 19.4 33.2 41.6 42.1 65.8 4 10.9.1 23.2-10 29.1l-33.7 16.8c3.9 21 3.9 42.5 0 63.5zm-117.6 21.1c59.2-77-28.7-164.9-105.7-105.7-59.2 77 28.7 164.9 105.7 105.7zm243.4 182.7l-8.2 14.3c-3 5.3-9.4 7.5-15.1 5.4-11.8-4.4-22.6-10.7-32.1-18.6-4.6-3.8-5.8-10.5-2.8-15.7l8.2-14.3c-6.9-8-12.3-17.3-15.9-27.4h-16.5c-6 0-11.2-4.3-12.2-10.3-2-12-2.1-24.6 0-37.1 1-6 6.2-10.4 12.2-10.4h16.5c3.6-10.1 9-19.4 15.9-27.4l-8.2-14.3c-3-5.2-1.9-11.9 2.8-15.7 9.5-7.9 20.4-14.2 32.1-18.6 5.7-2.1 12.1.1 15.1 5.4l8.2 14.3c10.5-1.9 21.2-1.9 31.7 0l8.2-14.3c3-5.3 9.4-7.5 15.1-5.4 11.8 4.4 22.6 10.7 32.1 18.6 4.6 3.8 5.8 10.5 2.8 15.7l-8.2 14.3c6.9 8 12.3 17.3 15.9 27.4h16.5c6 0 11.2 4.3 12.2 10.3 2 12 2.1 24.6 0 37.1-1 6-6.2 10.4-12.2 10.4h-16.5c-3.6 10.1-9 19.4-15.9 27.4l8.2 14.3c3 5.2 1.9 11.9-2.8 15.7-9.5 7.9-20.4 14.2-32.1 18.6-5.7 2.1-12.1-.1-15.1-5.4l-8.2-14.3c-10.4 1.9-21.2 1.9-31.7 0zM501.6 431c38.5 29.6 82.4-14.3 52.8-52.8-38.5-29.6-82.4 14.3-52.8 52.8z"></path></svg><!-- <i class="fas fa-cogs"></i> Font Awesome fontawesome.com --></span>API clients</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-4-1">Section Item 4.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-4-2">Section Item 4.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-4-3">Section Item 4.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#section-5"><span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-tools fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tools" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z"></path></svg><!-- <i class="fas fa-tools"></i> Font Awesome fontawesome.com --></span>Integration with other APIs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-5-1">With JASPAR</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-5-2">With <i>Ensembl!</i></a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-5-3">With Uniprot</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#section-6"><span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-laptop-code fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="laptop-code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"></path></svg><!-- <i class="fas fa-laptop-code"></i> Font Awesome fontawesome.com --></span>Cite us</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-6-1">References</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-6-2">Licensing</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#section-7"><span class="theme-icon-holder me-2"><svg class="svg-inline--fa fa-tablet-alt fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tablet-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM224 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm176-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h328c6.6 0 12 5.4 12 12v312z"></path></svg><!-- <i class="fas fa-tablet-alt"></i> Font Awesome fontawesome.com --></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-7-1">Section Item 7.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-7-2">Section Item 7.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="http://localhost:8000/docs_page#item-7-3">Section Item 7.3</a></li>
+
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2022-03-25</span></h1>
+					    <section class="docs-intro">
+							
+						    <p>Representational state transfer (REST has been employed throughout the software industry and is now a widely accepted set of guidelines for creating stateless, reliable web APIs in Genomics and Biological Data Resources. REST can be defined as a software architectural style that has been created to guide the design the architecture for the World Wide Web. .
+							The goal of REST is to increase performance, scalability, simplicity, modifiability, visibility, portability, and reliability.
+							</p>
+							<p>To allow genomic access to the ReMap ChIP-seq catalogue we designed a simple REST API.  </p>
+						</section><!--//docs-intro-->
+						
+						<h5>A Simple Wget example:</h5>
+						<p>Fetching ChIP-seq peaks in human (hg38) on chr1:xxxx-yyyy coordinates. USCS link to region <a class="theme-link" href="http://genome.ucsc.edu/s/Benoit%20Ballester/US_hg38_ReMap2022" target="_blank">embed here</a></p>
+<div class="box">
+<div class="code-toolbar"><pre class="language-shell-session line-numbers" tabindex="0"><code class="code-toolbar language-shell-session">wget -q --header='Content-type:application/json' 'https://rest.ensembl.org/regulatory/species/homo_sapiens/id/ENSR00000082023?activity=1'  -O -
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code>
+</pre><div class="toolbar"><div class="toolbar-item"><span>Shell session</span></div></div></div>
+</div>
+
+
+
+						
+						
+				    </header>
+				    <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">About ReMap</h2>
+
+						<div class="row no-gutters">
+							<div class="col-12 col-sm-7 col-md-7">
+								<p>ReMap is a large scale integrative analysis of DNA-binding experiments for Homo sapiens, Mus musculus, Drosophila melanogaster and Arabidopsis thaliana transcriptional regulators. The catalogues are the results of the manual curation of ChIP-seq, ChIP-exo, DAP-seq from public sources (GEO, ENCODE, ENA).	</p>
+								<p>ReMap has been the first large scale integrative initiative with dedicated curation and uniform data processing pipeline to reveal the complex architecture of the human regulatory landscape. The core foundation of the ReMap project rely on the manual curation and annotation of experiments metadata. Each experiment metadata introduced in ReMap has been assessed and manually curated to ensure correct target and biotype annotation</p>
+								<p>Want to know more about ReMap ? <a href="http://localhost:8000/docs_page#item-6-1" class="btn btn-light"><svg class="svg-inline--fa fa-arrow-alt-circle-right fa-w-16 me-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-alt-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"></path></svg><!-- <i class="fas fa-arrow-alt-circle-right me-2"></i> Font Awesome fontawesome.com --> Read our papers</a></p>
+							</div>
+							<div class="col-5 col-md-5">
+								<a href="./ReMap REST API_files/fig2_hsap_2022-20.png"><img class="figure-img img-fluid " src="./ReMap REST API_files/fig2_hsap_2022-20.png" alt="" title="ReMap data types"></a>
+							</div>
+						  </div>
+
+
+
+						
+
+
+
+                       
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Data types</h2>
+						<p>The ReMap database provides three majors atlases, the main catalog containing all binding regions, a non-redundant set and a CRMs atlas. Indeed, to show a discrete repertoire of binding regions in the genome, the redundant binding regions are merged for identical TRs resulting in a multi-cell, multi-tissue regulatory map of non-redundant binding regions. ReMap provides non-redundant binding regions (NR peaks) for each target, a unique feature not seen in other databases. This gives an accurate genomic location of peaks regardless of biotypes, in a multicell manner. The CRM atlas has been improved with a new methodology that relies on detecting peak density along the genome, reinforcing the identification of regulatory hotspots by the integration of ChIP-seq from various cells, antibodies, and laboratories.  </p>
+						<h5>The three datatypes in ReMap:</h5>
+						<ul>
+						    <li><strong class="me-1">All peaks :</strong> Contains all peaks, for all datasets, across many biotypes and experimental conditions</li>
+						    <li><strong class="me-1">Non Redundant peaks :</strong> Also called NR peaks, here redundancy has been removed </li>
+						    <li><strong class="me-1">Cis Regulatory Modules :</strong> One CRM is a clusters of many NR peaks </li>
+						</ul>
+
+						<div class="simplelightbox-gallery row justify-content-center">
+							<div class="col-8">
+						        <a href="./ReMap REST API_files/schema_data_remap2020_2.png"><img class="figure-img img-fluid " src="./ReMap REST API_files/schema_data_remap2020_2.png" alt="" title="ReMap data types"></a>
+							</div>
+						</div><!--//gallery-->
+
+
+
+					</section><!--//section-->
+					
+
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Why a REST API ?</h2>
+						<h5>Language agnostic access to ReMap</h5>
+						By creating a REST API for ReMap we aimed for a language agnostic way to access the ReMap ChIP-seq peaks. 
+						<ul>
+							<li>The ReMap REST query the to ReMap ChIP-seq catalogue based on genomic coordinates. </li>
+							<li>The REST API aim to provide a stable service, only limited by the network latenc and is a read only service. </li>
+							<li>Our API allows access to previous ReMap releases. </li>
+							<li>It allows filtering on specific Transcriptional Regulators and Biotype. </li>
+						</ul>
+
+						<h5>JSON ouput</h5>
+						The ReMap REST API returns data in JSON format, see <a href="https://en.wikipedia.org/wiki/JSON">JSON doc</a> for further information, but :  
+						<ul>
+						    <li>JSON stands for JavaScript Object Notation.</li>
+							<li>JSON is a lightweight data-interchange format.</li>
+							<li>JSON is often used when data is sent from a server to a web page</li>
+							<li>Code for reading and generating JSON exists in many programming languages.</li>
+						</ul>
+
+
+					</section><!--//section-->
+
+					
+
+
+
+
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">API overview</h1>
+
+
+				    </header>
+				     <section class="docs-section active" id="item-2-1">
+						<h2 class="section-heading">All peaks</h2>
+						<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col">Endpoints</th>
+										<th scope="col">Description</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row"><code>/getallpeaks</code></th>
+										<td>Return ReMap peaks given genomic coordinates (complusory)</td>
+									</tr>
+									<tr>
+										<th scope="row"><code>/getallpeaks/bytarget</code></th>
+										<td>Return ReMap peaks given a target name (eg. FOXA1) and genomic coordinates </td>
+									</tr>
+									<tr>
+										<th scope="row"><code>/getallpeaks/bybiotype</code></th>
+										<td>Return ReMap peaks given a biotype (eg. MCF-7) and genomic coordinates</td>
+									</tr>
+									<tr>
+										<th scope="row"><code>/getallpeaks/bytargetandbiotype</code></th>
+										<td>Return ReMap peaks given a traget and biotype (eg. FOXA1 and MCF-7) and genomic coordinates</td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--//table-responsive-->
+					</section><!--//section-->
+					
+
+
+					   <div class="callout-block callout-block-info">
+                            
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg><!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+		                            </span><!--//icon-holder-->
+	                                Required values
+	                            </h4>
+                                <p><code>chr:start-end</code> coordinates are compulsory</p>
+                                <p>assembly (default <code>hg38</code>)</p>
+                                <p>datatype (default <code>all</code> peaks)</p>
+                            </div><!--//content-->
+                       </div><!--//callout-block-->
+
+
+
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">getallpeaks</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+<h3>Required</h3>
+
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Name</th><th>Type</th><th>Description</th><th>Default</th><th>Example Values</th>
+  </tr>
+</thead>
+<tbody>
+	
+    <tr>
+    <td>chr</td>
+    <td><var>String</var></td>
+    <td>Chromosome name</td>
+    <td><var>
+       - 
+    </var></td>
+    <td> <var>chr1</var><br>
+    </td>
+    </tr>
+	
+	<tr>
+    <td>start</td>
+    <td><var>String</var></td>
+    <td>Start coordinate of the genomic region</td>
+    <td><var>
+       - 
+    </var></td>
+    <td> <var>1234567</var><br>
+    </td>
+    </tr>
+
+	<tr>
+    <td>end</td>
+    <td><var>String</var></td>
+    <td>End coordinate of the genomic region</td>
+    <td><var>
+       - 
+    </var></td>
+    <td> <var>1244567</var><br>
+    </td>
+    </tr>
+
+</tbody>
+</table>
+
+
+<h3>Optional</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th><th>Type</th><th>Description</th><th>Default</th><th>Example Values</th>
+    </tr>
+  </thead>
+    <tbody>
+  	
+	<tr>
+    <td>assembly</td>
+    <td><var>String</var></td>
+    <td>Genome assemlby name</td>
+    <td><var>
+       hg38 
+    </var></td>
+    <td> <var>hg38, hg19, mm10</var><br>
+    </td>
+    </tr>
+  	
+  	<tr>
+    <td>datatype</td>
+    <td><var>String</var></td>
+    <td>ReMap datatypes (<a href="http://localhost:8000/docs_page#item-1-2">see above for description</a>)</td>
+    <td><var>
+       all 
+    </var></td>
+    <td> <var>all, nr, crm</var><br>
+    </td>
+    </tr>
+			
+			
+  	</tbody>
+	</table>
+
+
+
+
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">getallpeaks/bytarget</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">getallpeaks/bybiotype</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">getallpeaks/bytargetandbiotype</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">API documentation</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Section Item 3.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Section Item 3.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Section Item 3.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">API clients test </h1>
+					    <section class="docs-intro">
+						    <p>highlight</p>
+						
+							<div class="docs-code-block">
+								<!-- ** Embed github code starts ** -->
+								<script src="./ReMap REST API_files/example.js"></script>
+								<!-- ** Embed github code ends ** -->
+							</div><!--//docs-code-block-->
+
+							<p>prism javascript</p>
+<div class="box">
+<div class="code-toolbar"><pre class="language-javascript line-numbers" tabindex="0"><code class="code-toolbar language-javascript"><span class="token keyword">var</span> myObject <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token literal-property property">property1</span><span class="token operator">:</span> <span class="token string">"somet cganfe hing"</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">property2</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">property3</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code>&lt;
+</pre><div class="toolbar"><div class="toolbar-item"><span>JavaScript</span></div></div></div>
+</div>
+
+							<p>prism perl</p>
+<div class="box">
+<div class="code-toolbar"><pre class="language-perl line-numbers" tabindex="0"><code class="code-toolbar language-perl"><span class="token keyword">use</span> strict<span class="token punctuation">;</span>
+<span class="token keyword">use</span> warnings<span class="token punctuation">;</span>
+ 
+<span class="token keyword">use</span> HTTP<span class="token punctuation">:</span><span class="token punctuation">:</span>Tiny<span class="token punctuation">;</span>
+ 
+<span class="token keyword">my</span> <span class="token variable">$http</span> <span class="token operator">=</span> HTTP<span class="token punctuation">:</span><span class="token punctuation">:</span>Tiny<span class="token operator">-&gt;</span>new<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+<span class="token keyword">my</span> <span class="token variable">$server</span> <span class="token operator">=</span> <span class="token string">'https://rest.ensembl.org'</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$ext</span> <span class="token operator">=</span> <span class="token string">'/lookup/id/ENSG00000157764?'</span><span class="token punctuation">;</span>
+<span class="token keyword">my</span> <span class="token variable">$response</span> <span class="token operator">=</span> <span class="token variable">$http</span><span class="token operator">-&gt;</span>get<span class="token punctuation">(</span><span class="token variable">$server</span><span class="token operator">.</span><span class="token variable">$ext</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  headers <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token string">'Content-type'</span> <span class="token operator">=&gt;</span> <span class="token string">'application/json'</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>
+</pre><div class="toolbar"><div class="toolbar-item"><span>Perl</span></div></div></div>
+</div>
+
+						
+						
+						
+						</section><!--//docs-intro-->
+
+<p>Test Ensembl Clients</p>
+
+<ul class="nav nav-pills">
+	  <li class="active"><a href="http://localhost:8000/docs_page#examplefull" data-toggle="tab">Example output</a></li>
+    
+		
+		  <li><a href="http://localhost:8000/docs_page#perlfull" data-toggle="tab">Perl</a></li>
+		
+		  <li><a href="http://localhost:8000/docs_page#python2full" data-toggle="tab">Python2</a></li>
+		
+		  <li><a href="http://localhost:8000/docs_page#python3full" data-toggle="tab">Python3</a></li>
+		
+		  <li><a href="http://localhost:8000/docs_page#rubyfull" data-toggle="tab">Ruby</a></li>
+		
+		  <li><a href="http://localhost:8000/docs_page#javafull" data-toggle="tab">Java</a></li>
+		
+		  <li><a href="http://localhost:8000/docs_page#rfull" data-toggle="tab">R</a></li>
+		
+		  <li><a href="http://localhost:8000/docs_page#curlfull" data-toggle="tab">Curl</a></li>
+		
+		  <li><a href="http://localhost:8000/docs_page#wgetfull" data-toggle="tab">Wget</a></li>
+		
+	</ul>
+
+
+
+
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Section Item 4.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Section Item 4.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Section Item 4.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Integration with other APIs</h1>
+					    <section class="docs-intro">
+						    <p>The ReMap REST application programming interface, as well as others Resources with REST APIs can be used to query and access their data programmatically. This is the basement of interoperability</p>
+							<h5>A few RESTfull resources that can be used with ReMap:</h5>
+							<div class="table-responsive my-4">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th scope="col">Databases</th>
+											<th scope="col">Content</th>
+											<th scope="col">Entry point</th>
+											<th scope="col">Papers</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">JASPAR</th>
+											<td>Transcription Factor Binding Sites</td>
+											<td>https://jaspar.genereg.net/api/</td>
+											<td>doi:10.1093/bioinformatics/btx804</td>
+										</tr>
+										<tr>
+											<th scope="row">Ensembl</th>
+											<td>Genes and Genomes</td>
+											<td>https://rest.ensembl.org/</td>
+											<td>doi:10.1093/bioinformatics/btu613</td>
+										</tr>
+										<tr>
+											<th scope="row">Uniprot</th>
+											<td>Proteins annotations</td>
+											<td>https://www.ebi.ac.uk/proteins/api/doc</td>
+											<td>doi:10.1093/nar/gkx237</td>
+										</tr>
+									</tbody>
+								</table>
+							</div><!--//table-responsive-->
+
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">With JASPAR</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">With <i>ensembl!</i></h2>
+						<p>Ensembl REST API Endpoins : https://rest.ensembl.org/</p>
+						<p>Ensembl User guide : https://github.com/Ensembl/ensembl-rest/wiki</p>
+						<p>Using Ensembl REST API (youtube) : https://www.youtube.com/watch?v=JKD2VJnjs98 </p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-3">
+							<h2 class="section-heading">With Uniprot</h2>
+						<p>Uniprot documentation : https://www.uniprot.org/help/programmatic_access</p>
+						<p>Uniprot RESTfull Github : https://github.com/ebi-uniprot/uniprot-rest-api</p>
+						<p>Uniprot help : https://www.uniprot.org/help/api_queries</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+		        <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Citing</h1>
+					    <section class="docs-intro">
+						    <p>If your use the ReMap REST API please cite xxxx et al. (URL).</p>
+							<p>To cite the ReMap data usage, please cite the latest (or corresponding) ReMap paper XXXX et al. (URL) .</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">References</h2>
+						<p>If your use the ReMap REST API please cite xxxx et al. (URL).</p>
+						<p>To cite the ReMap data usage, please cite the latest ReMap paper XXXX et al. (URL) .</p>
+
+							<!--<div class="simplelightbox-gallery row mb-3"></div>-->
+							<div class="row mb-3">
+								<div class="col-12 col-md-3 mb-3">
+									<a href="./ReMap REST API_files/Screenshot_2022remap.png"><img class="figure-img img-fluid " src="./ReMap REST API_files/Screenshot_2022remap.png" alt="" title="NAR ReMap2022"></a>
+								</div>
+								<div class="col-12 col-md-3 mb-3">
+									<a href="./ReMap REST API_files/Screenshot_2020remap.png"><img class="figure-img img-fluid " src="./ReMap REST API_files/Screenshot_2020remap.png" alt="" title="NAR ReMap2020"></a>
+								</div>
+								<div class="col-12 col-md-3 mb-3">
+									<a href="./ReMap REST API_files/Screenshot_2018remap.png"><img class="figure-img img-fluid " src="./ReMap REST API_files/Screenshot_2018remap.png" alt="" title="NAR ReMap2018"></a>
+								</div>
+								<div class="col-12 col-md-3 mb-3">
+									<a href="./ReMap REST API_files/Screenshot_2015remap.png"><img class="figure-img img-fluid " src="./ReMap REST API_files/Screenshot_2015remap.png" alt="" title="NAR ReMap2015"></a>
+								</div>
+							</div><!--//gallery-->
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Licensing</h2>
+						<p>The ReMap catalogues (2022, 2020, 2018, 2015) are under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0 international license</a>, while ReMap-REST, ReMapEnrich, ReMap-Pipeline, are under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU GPLv3 licence</a>.</p>
+						<p>ReMap is a database of transcriptional regulators peaks derived from curated ChIP-seq, ChIP-exo, DAP-seq experiments in Human, Mouse, Fruit Fly and Arabidopsis Thaliana.
+							The current ReMap version is the 2022 (4rth) release.</p>
+					</section><!--//section-->
+					
+			    </article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+					    <section class="docs-intro">
+						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Section Item 7.1</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Section Item 7.2</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-7-3">
+							<h2 class="section-heading">Section Item 7.3</h2>
+						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			    
+			    
+
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Template Copyright © <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-github fa-w-16 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github fa-fw"></i> Font Awesome fontawesome.com --></a></li> 
+				            <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-twitter fa-w-16 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fab fa-twitter fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+				            <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-slack fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="slack" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"></path></svg><!-- <i class="fab fa-slack fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+				            <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-product-hunt fa-w-16 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="product-hunt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M326.3 218.8c0 20.5-16.7 37.2-37.2 37.2h-70.3v-74.4h70.3c20.5 0 37.2 16.7 37.2 37.2zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-128.1-37.2c0-47.9-38.9-86.8-86.8-86.8H169.2v248h49.6v-74.4h70.3c47.9 0 86.8-38.9 86.8-86.8z"></path></svg><!-- <i class="fab fa-product-hunt fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+				            <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-facebook-f fa-w-10 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i class="fab fa-facebook-f fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+				            <li class="list-inline-item"><a href="http://localhost:8000/docs_page#"><svg class="svg-inline--fa fa-instagram fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-instagram fa-fw"></i> Font Awesome fontawesome.com --></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="./ReMap REST API_files/popper.min.js"></script>
+    <script src="./ReMap REST API_files/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="./ReMap REST API_files/smoothscroll.min.js"></script>
+    <script src="./ReMap REST API_files/highlight.min.js&#39; %}"></script>
+    <script src="./ReMap REST API_files/highlight-custom.js"></script> 
+    <script src="./ReMap REST API_files/simple-lightbox.min.js"></script>      
+    <script src="./ReMap REST API_files/gumshoe.polyfills.min.js"></script> 
+    <script src="./ReMap REST API_files/docs.js"></script> 
+
+
+ 
+
+</body></html>
